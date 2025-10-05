@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF8DC"
+    tools:context=".RoomInfoActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#993968"
+        android:text="Room Information" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/edNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:hint="Please Enter Number of rooms" />
+
+    <EditText
+        android:id="@+id/edCheckin"
+        android:clickable="false"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
+        android:hint="Please select Checkin Date"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+        android:layout_width="match_parent" />
+
+    <EditText
+        android:id="@+id/edCheckout"
+        android:clickable="false"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
+        android:hint="Please select Checkout Date"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/btnPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#993968" />
+
+</LinearLayout>
